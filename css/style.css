@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(104, 144, 158);
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    inline-size: 750px;
+    margin: 100px;
+}
