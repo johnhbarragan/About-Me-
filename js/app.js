@@ -2,9 +2,9 @@
 
 let username = prompt('What\'s your name?');
 
-alert('Hello ' + username);
+alert('Hello ' + username + '. Glad to have you here.');
 
-let answerTime = prompt('Do you have time to answer a couple of questions? Answer \'Yes\'\ or \'No\'').toLowerCase();
+let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
 //console.log('Do they have time to answer questions ' + answerTime);
 if (answerTime === 'yes' || answerTime === 'y'){
@@ -12,26 +12,43 @@ if (answerTime === 'yes' || answerTime === 'y'){
 
 } else if (answerTime === 'no' || answerTime === 'n'){
     alert('Since you don\'t have time, please come back another time!');
+} else {
+    alert('Please answer with Yes or No');
 }
 
-let answerOne = prompt('Can you guess where I\'m from? Answer \'Yes\'\ or \'No\'').toLowerCase();
+let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
 //console.log('Do they know where I\'m from?: ' + answerOne);
 if (answerOne === 'yes' || answerOne === 'y'){
-    alert('You know so much about me already!');
+    alert('Yes! I am from Pasco, WA');
 
 } else if (answerOne === 'no' || answerOne === 'n'){
-    alert('NO? I\'ll give you a hint, I\'m from Eastern Washington');
+    alert('It\'s true...I was born and raised in Pasco, WA');
+} else {
+    alert('Please answer with Yes or No')
+}
+let answerFamily = prompt('Am I the youngest of 5 kids? Answer \'Yes\'\ or \'No\'').toLowerCase();
+
+//console.log('Do they know if I'm youngest in family?: ' + answerFamily);
+if (answerFamily === 'yes' || answerFamily === 'y'){
+    alert('You are correct!');
+
+} else if (answerFamily === 'no' || answerFamily === 'n'){
+    alert('It\'s true, I am the youngest!');
+} else {
+    alert('Please answer with Yes or No');
 }
 
-let answerFood = prompt('Can you guess my favorite food? Answer \'Yes\'\ or \'No\'').toLowerCase();
+let answerFood = prompt('Are cheesburgers my favorite food? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
 //console.log('Do they know my favorite food: ' + answerFood);
 if (answerFood === 'yes' || answerFood === 'y'){
-    alert('How did you know I loved cheeseburgers?');
+    alert('You are correct! Who doesn\'t love a cheeseburger?');
 
 } else if (answerFood === 'no' || answerFood === 'n'){
-    alert('Since you said no, I\'ll tell you: Cheeseburgers!');
+    alert('You are incorrect, I love me a big cheesy cheesburger');
+} else {
+    alert('Please answer with Yes or No');
 }
 
 let answerFriend = prompt('Do you want to be friends? Answer \'Yes\'\ or \'No\'').toLowerCase();
@@ -42,4 +59,8 @@ if (answerFriend === 'yes' || answerFriend === 'y'){
 
 } else if (answerFriend === 'no' || answerFriend === 'n'){
     alert('Since you said No, go away!');
+} else {
+    alert('Please answer with Yes or No');
 }
+
+alert('Hope you learned some fun facts about me, ' + username); 
