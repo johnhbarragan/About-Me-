@@ -63,4 +63,60 @@ if (answerFriend === 'yes' || answerFriend === 'y'){
     alert('Please answer with Yes or No');
 }
 
-alert('Hope you learned some fun facts about me, ' + username); 
+let johnnyNephews = 7;
+let attempts = 4;
+ 
+while (attempts){
+for (let i=0; i < attempts; i+1) {
+    let answerNephews = +prompt ('Can you guess how many nephews I have?');{
+        console.log (`Guess of Johnny's nephews: ${answerNephews}`);
+
+  } if (answerNephews === johnnyNephews) {
+      alert ('You got it!');
+      break;
+
+  } else if (answerNephews < johnnyNephews) {
+    attempts--;
+      alert (`You are too low! You have have ${attempts} guesses left`);
+           
+ } else if (answerNephews > johnnyNephews){
+    attempts--; 
+    alert (`You are too high! You have ${attempts} guesses left`);
+    
+    } if (attempts === 0) {
+      alert (`Since there are no guess left, I have 7 nephews!`);
+  } 
+}
+
+let johnnyCandy = ['snickers', 'kit kat', 'skittles'];
+let attemptsCandy = 5;
+
+while (attemptsCandy) {
+    let answerCandy = prompt('What are my favorite candy?'); {
+        console.log(`Guess of Johnny's favorite candy: ${answerCandy}`);
+    }
+    for (let i = 0; i < attemptsCandy; i+1) {
+    
+    if (answerCandy === johnnyCandy[i]){
+    attemptsCandy = 0;
+    alert('You are correct!');
+    break;
+    }
+
+    else if (answerCandy !== johnnyCandy[i]){ 
+    alert(`That is not one of my favorite candies. You have ${attemptsCandy} attempts remaining.`);
+    answerCandy = prompt(`Can you try another candy?`);
+    attemptsCandy--;
+    }  
+    
+  if (attemptsCandy === 0 && answerCandy !== johnnyCandy[i]){
+    alert(`My favorite candy are: ${johnnyCandy}`);
+    }
+  else if (answerCandy === johnnyCandy[i]){
+    alert('PHEW! You got one! Can you name another?');
+  } break;
+} 
+}
+
+alert('Hope you learned some fun facts about me, ' + username);
+}

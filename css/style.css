@@ -20,4 +20,26 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     inline-size: 750px;
     margin: 100px;
+    margin-top: 30px;
 }
+
+ol {
+    margin:100px;
+    margin-top: 30px;
+} 
+
+ul {
+    margin:100px;
+    margin-top: 30px;
+}
+
+img {
+    height: 300px;
+    margin-left: 100px;
+
+}
+
+/* li {
+    display: list-item;
+    list-style-position: inside;
+} */
