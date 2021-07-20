@@ -100,7 +100,7 @@ while (attempts) {
     attempts--; 
     alert (`You are too high! You have ${attempts} guesses left`);
     
-    } if (attempts === 0 || answerNephews !== johnnyNephews) {
+    } if (attempts === 0 && answerNephews !== johnnyNephews) {
       alert (`Since there are no guess left, I have 7 nephews!`);
   } 
 }
