@@ -7,7 +7,7 @@ alert('Hello ' + username + '. Glad to have you here.');
 
 //Question 1 
 function questionOne(){
-  let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\'\ or \'No\'').toLowerCase();
+  let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\' or \'No\'').toLowerCase();
 
   //console.log('Do they have time to answer questions ' + answerTime);
   if (answerTime === 'yes' || answerTime === 'y'){
@@ -24,7 +24,7 @@ questionOne();
 
 //Question 2
 function questionTwo(){
-  let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\'\ or \'No\'').toLowerCase();
+  let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\' or \'No\'').toLowerCase();
 
   //console.log('Do they know where I\'m from?: ' + answerOne);
   if (answerOne === 'yes' || answerOne === 'y'){
@@ -74,18 +74,21 @@ function questionFour(){
 questionFour();
 
 //Question 5
-let answerFriend = prompt('Do you want to be friends? Answer \'Yes\'\ or \'No\'').toLowerCase();
+function questionFive(){
+  let answerFriend = prompt('Do you want to be friends? Answer \'Yes\' or \'No\'').toLowerCase();
 
-//console.log('Do they want to be friends: ' + answerFriend);
-if (answerFriend === 'yes' || answerFriend === 'y'){
+  //console.log('Do they want to be friends: ' + answerFriend);
+  if (answerFriend === 'yes' || answerFriend === 'y'){
     alert('Thanks for saying Yes! I love making new friends!');
     correctguesses++;
 
-} else if (answerFriend === 'no' || answerFriend === 'n'){
+  } else if (answerFriend === 'no' || answerFriend === 'n'){
     alert('Since you said No, go away!');
-} else {
+  } else {
     alert('Please answer with Yes or No');
+  }
 }
+questionFive();
 
 //Question 6
 let johnnyNephews = 7;
