@@ -126,36 +126,39 @@ questionSix();
 
 
 //Question 7
-let johnnyCandy = ['snickers', 'kit kat', 'skittles'];
-let attemptsCandy = 6;
+function questionSeven(){
+  let johnnyCandy = ['snickers', 'kit kat', 'skittles'];
+  let attemptsCandy = 6;
 
-while (attemptsCandy) {
+  while (attemptsCandy) {
     for (let i = 0; i < 6; i++) {
     
-    let answerCandy = prompt('What are my favorite candy?'); {
+      let answerCandy = prompt('What are my favorite candy?'); {
         console.log(`Guess of Johnny's favorite candy: ${answerCandy}`);
-    }
+      }
     
     
     
-    if (answerCandy === johnnyCandy[i]){
-    attemptsCandy = 0;
-    alert('You are correct!');
-    correctguesses++;
-    break;
-    }
+      if (answerCandy === johnnyCandy[i]){
+        attemptsCandy = 0;
+        alert('You are correct!');
+        correctguesses++;
+        break;
+      }
     
-    else if (answerCandy !== johnnyCandy[i]){
-    attemptsCandy--; 
-    alert(`That is not one of my favorite candies. You have ${attemptsCandy} attempts remaining.`);
-    }  
+      else if (answerCandy !== johnnyCandy[i]){
+        attemptsCandy--; 
+        alert(`That is not one of my favorite candies. You have ${attemptsCandy} attempts remaining.`);
+      }  
     
-    if (attemptsCandy === 0 && answerCandy !== johnnyCandy[i]){
+      if (attemptsCandy === 0 && answerCandy !== johnnyCandy[i]){
         alert(`My favorite candy are: ${johnnyCandy}`);
-        }
-       break;
+      }
+      break;
     }  
+  }
 }
+questionSeven();
 
 alert('Hope you learned some fun facts about me, ' + username);
 alert(`You got ${correctguesses} out of 7 correct!`)
