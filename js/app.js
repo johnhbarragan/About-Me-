@@ -5,7 +5,8 @@ let username = prompt('What\'s your name?');
 
 alert('Hello ' + username + '. Glad to have you here.');
 
-//Question 1
+//Question 1 
+function questionOne(){
 let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
 //console.log('Do they have time to answer questions ' + answerTime);
@@ -18,6 +19,8 @@ if (answerTime === 'yes' || answerTime === 'y'){
 } else {
     alert('Please answer with Yes or No');
 }
+}
+questionOne();
 
 //Question 2
 let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\'\ or \'No\'').toLowerCase();
