@@ -40,18 +40,21 @@ function questionTwo(){
 questionTwo();
 
 //Question 3
-let answerFamily = prompt('Am I the youngest of 5 kids? Answer \'Yes\'\ or \'No\'').toLowerCase();
+function questionThree(){
+  let answerFamily = prompt('Am I the youngest of 5 kids? Answer \'Yes\' or \'No\'').toLowerCase();
 
-//console.log('Do they know if I'm youngest in family?: ' + answerFamily);
-if (answerFamily === 'yes' || answerFamily === 'y'){
+  //console.log('Do they know if I'm youngest in family?: ' + answerFamily);
+  if (answerFamily === 'yes' || answerFamily === 'y'){
     alert('You are correct!');
     correctguesses++;
 
-} else if (answerFamily === 'no' || answerFamily === 'n'){
+  } else if (answerFamily === 'no' || answerFamily === 'n'){
     alert('It\'s true, I am the youngest!');
-} else {
+  } else {
     alert('Please answer with Yes or No');
+  }
 }
+questionThree();
 
 //Question 4
 let answerFood = prompt('Are cheesburgers my favorite food? Answer \'Yes\'\ or \'No\'').toLowerCase();
