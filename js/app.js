@@ -57,18 +57,21 @@ function questionThree(){
 questionThree();
 
 //Question 4
-let answerFood = prompt('Are cheesburgers my favorite food? Answer \'Yes\'\ or \'No\'').toLowerCase();
+function questionFour(){
+  let answerFood = prompt('Are cheesburgers my favorite food? Answer \'Yes\' or \'No\'').toLowerCase();
 
-//console.log('Do they know my favorite food: ' + answerFood);
-if (answerFood === 'yes' || answerFood === 'y'){
+  //console.log('Do they know my favorite food: ' + answerFood);
+  if (answerFood === 'yes' || answerFood === 'y'){
     alert('You are correct! Who doesn\'t love a cheeseburger?');
     correctguesses++;
 
-} else if (answerFood === 'no' || answerFood === 'n'){
+  } else if (answerFood === 'no' || answerFood === 'n'){
     alert('You are incorrect, I love me a big cheesy cheesburger');
-} else {
+  } else {
     alert('Please answer with Yes or No');
+  }
 }
+questionFour();
 
 //Question 5
 let answerFriend = prompt('Do you want to be friends? Answer \'Yes\'\ or \'No\'').toLowerCase();
