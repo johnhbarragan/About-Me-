@@ -7,34 +7,37 @@ alert('Hello ' + username + '. Glad to have you here.');
 
 //Question 1 
 function questionOne(){
-let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\'\ or \'No\'').toLowerCase();
+  let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
-//console.log('Do they have time to answer questions ' + answerTime);
-if (answerTime === 'yes' || answerTime === 'y'){
+  //console.log('Do they have time to answer questions ' + answerTime);
+  if (answerTime === 'yes' || answerTime === 'y'){
     alert('Thank you for answering Yes, let\'s get started!');
     correctguesses++;
 
-} else if (answerTime === 'no' || answerTime === 'n'){
+  } else if (answerTime === 'no' || answerTime === 'n'){
     alert('Since you don\'t have time, please come back another time!');
-} else {
+  } else {
     alert('Please answer with Yes or No');
-}
+  }
 }
 questionOne();
 
 //Question 2
-let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\'\ or \'No\'').toLowerCase();
+function questionTwo(){
+  let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\'\ or \'No\'').toLowerCase();
 
-//console.log('Do they know where I\'m from?: ' + answerOne);
-if (answerOne === 'yes' || answerOne === 'y'){
+  //console.log('Do they know where I\'m from?: ' + answerOne);
+  if (answerOne === 'yes' || answerOne === 'y'){
     alert('Yes! I am from Pasco, WA');
     correctguesses++;
 
-} else if (answerOne === 'no' || answerOne === 'n'){
+  } else if (answerOne === 'no' || answerOne === 'n'){
     alert('It\'s true...I was born and raised in Pasco, WA');
-} else {
-    alert('Please answer with Yes or No')
+  } else {
+    alert('Please answer with Yes or No');
+  }
 }
+questionTwo();
 
 //Question 3
 let answerFamily = prompt('Am I the youngest of 5 kids? Answer \'Yes\'\ or \'No\'').toLowerCase();
