@@ -91,34 +91,37 @@ function questionFive(){
 questionFive();
 
 //Question 6
-let johnnyNephews = 7;
-let attempts = 4;
- 
-while (attempts) {
+function questionSix(){
+  let johnnyNephews = 7;
+  let attempts = 4;
+  
+  while (attempts) {
     for (let i=0; i < 4; i++) {
     
-    let answerNephews = +prompt ('Can you guess how many nephews I have?'); {
+      let answerNephews = +prompt ('Can you guess how many nephews I have?'); {
         console.log (`How many nephews do they think I have: ${answerNephews}`);
-    }
+      }
 
-    if (answerNephews === johnnyNephews) {
-      attempts = 0;
-      alert ('You got it!');
-      correctguesses++;
-      break;
-
-  } else if (answerNephews < johnnyNephews) {
-    attempts--;
-      alert (`You are too low! You have have ${attempts} guesses left`);
+      if (answerNephews === johnnyNephews) {
+        attempts = 0;
+        alert ('You got it!');
+        correctguesses++;
+        break;
+      } else if (answerNephews < johnnyNephews) {
+        attempts--;
+        alert (`You are too low! You have have ${attempts} guesses left`);
            
- } else if (answerNephews > johnnyNephews){
-    attempts--; 
-    alert (`You are too high! You have ${attempts} guesses left`);
+      } else if (answerNephews > johnnyNephews){
+        attempts--; 
+        alert (`You are too high! You have ${attempts} guesses left`);
     
-    } if (attempts === 0 && answerNephews !== johnnyNephews) {
-      alert (`Since there are no guess left, I have 7 nephews!`);
-  } 
+      } if (attempts === 0 && answerNephews !== johnnyNephews) {
+        alert (`Since there are no guess left, I have 7 nephews!`);
+      } 
+    }
+  }
 }
+questionSix();
 
 
 
@@ -153,6 +156,6 @@ while (attemptsCandy) {
        break;
     }  
 }
-}
+
 alert('Hope you learned some fun facts about me, ' + username);
 alert(`You got ${correctguesses} out of 7 correct!`)
