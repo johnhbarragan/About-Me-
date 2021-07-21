@@ -16,3 +16,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Notes about Lab 3: Extend your 'About Me'
 * I extended my game by adding a top 10 list about my favorite shows
+
+### Lab Four Pair Programming
+Navigator: Johnny
+Driver: Brian
