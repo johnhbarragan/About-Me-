@@ -1,41 +1,78 @@
 body {
-    background-color: #8A70FF;
+    background-color: grey;
 }
 
 h1 {
-    font-size: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
     margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
+    background-color: darkgray;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#Intro {
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: darkgray;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 h2 {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 800px;
+    border: 2px  black;
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     inline-size: 750px;
-    margin: 100px;
-    margin-top: 30px;
+    margin: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px inset black;
+    padding: 20px;
+    background-color: lightblue;
 }
 
 ol {
-    margin:100px;
-    margin-top: 30px;
+    margin-left:800px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    border: 2px inset black;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: lightblue;
+    list-style-type: inside;
 } 
 
 ul {
-    margin:100px;
-    margin-top: 30px;
+    margin-left:800px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border: 2px inset black;
+    padding: 20px;
+    padding-left:40px;
+    background-color: lightblue;
+    list-style-type:disc;
 }
 
 img {
-    height: 300px;
-    margin-left: 100px;
+    height: 400px;
+    width: 300px;
+    float:left;
+    margin-left: 250px;
+    margin-top: 20px;
+    
 
 }
 
