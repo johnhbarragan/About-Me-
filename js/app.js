@@ -5,11 +5,10 @@ let username = prompt('What\'s your name?');
 
 alert('Hello ' + username + '. Glad to have you here.');
 
-//Question 1 
+
 function questionOne(){
   let answerTime = prompt('Do you have time to take a short quiz about me? Answer \'Yes\' or \'No\'').toLowerCase();
 
-  //console.log('Do they have time to answer questions ' + answerTime);
   if (answerTime === 'yes' || answerTime === 'y'){
     alert('Thank you for answering Yes, let\'s get started!');
     correctguesses++;
@@ -22,11 +21,10 @@ function questionOne(){
 }
 questionOne();
 
-//Question 2
+
 function questionTwo(){
   let answerOne = prompt('Am I from Pasco, WA? Answer \'Yes\' or \'No\'').toLowerCase();
 
-  //console.log('Do they know where I\'m from?: ' + answerOne);
   if (answerOne === 'yes' || answerOne === 'y'){
     alert('Yes! I am from Pasco, WA');
     correctguesses++;
@@ -39,11 +37,10 @@ function questionTwo(){
 }
 questionTwo();
 
-//Question 3
+
 function questionThree(){
   let answerFamily = prompt('Am I the youngest of 5 kids? Answer \'Yes\' or \'No\'').toLowerCase();
 
-  //console.log('Do they know if I'm youngest in family?: ' + answerFamily);
   if (answerFamily === 'yes' || answerFamily === 'y'){
     alert('You are correct!');
     correctguesses++;
@@ -56,11 +53,11 @@ function questionThree(){
 }
 questionThree();
 
-//Question 4
+
 function questionFour(){
   let answerFood = prompt('Are cheesburgers my favorite food? Answer \'Yes\' or \'No\'').toLowerCase();
 
-  //console.log('Do they know my favorite food: ' + answerFood);
+
   if (answerFood === 'yes' || answerFood === 'y'){
     alert('You are correct! Who doesn\'t love a cheeseburger?');
     correctguesses++;
@@ -73,11 +70,10 @@ function questionFour(){
 }
 questionFour();
 
-//Question 5
+
 function questionFive(){
   let answerFriend = prompt('Do you want to be friends? Answer \'Yes\' or \'No\'').toLowerCase();
 
-  //console.log('Do they want to be friends: ' + answerFriend);
   if (answerFriend === 'yes' || answerFriend === 'y'){
     alert('Thanks for saying Yes! I love making new friends!');
     correctguesses++;
@@ -90,7 +86,7 @@ function questionFive(){
 }
 questionFive();
 
-//Question 6
+
 function questionSix(){
   let johnnyNephews = 7;
   let attempts = 4;
@@ -98,9 +94,7 @@ function questionSix(){
   while (attempts) {
     for (let i=0; i < 4; i++) {
     
-      let answerNephews = +prompt ('Can you guess how many nephews I have?'); {
-        console.log (`How many nephews do they think I have: ${answerNephews}`);
-      }
+      let answerNephews = +prompt ('Can you guess how many nephews I have?'); 
 
       if (answerNephews === johnnyNephews) {
         attempts = 0;
@@ -125,7 +119,6 @@ questionSix();
 
 
 
-//Question 7
 function questionSeven(){
   let johnnyCandy = ['snickers', 'kit kat', 'skittles'];
   let attemptsCandy = 6;
@@ -133,11 +126,7 @@ function questionSeven(){
   while (attemptsCandy) {
     for (let i = 0; i < 6; i++) {
     
-      let answerCandy = prompt('What are my favorite candy?'); {
-        console.log(`Guess of Johnny's favorite candy: ${answerCandy}`);
-      }
-    
-    
+      let answerCandy = prompt('What are my favorite candy?'); 
     
       if (answerCandy === johnnyCandy[i]){
         attemptsCandy = 0;
